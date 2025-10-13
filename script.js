@@ -71,3 +71,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Team section JavaScript (minimal as it's mostly CSS animations)
+document.addEventListener('DOMContentLoaded', function() {
+    // Add floating shapes to the team section
+    const teamSection = document.querySelector('.team-section');
+    
+    if (teamSection) {
+        // Create floating shapes
+        const shape1 = document.createElement('div');
+        shape1.classList.add('team-shape', 'shape-1');
+        
+        const shape2 = document.createElement('div');
+        shape2.classList.add('team-shape', 'shape-2');
+        
+        teamSection.appendChild(shape1);
+        teamSection.appendChild(shape2);
+    }
+});
